@@ -1,1 +1,33 @@
+---
 theme: jekyll-theme-minimal
+
+title: Vero Help
+timezone: UTC
+collections:
+  articles:
+    title: Articles
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: articles
+  values:
+    layout: articles
+    categories: 
+email: support@spyn.co
+description: 
+baseurl: ''
+url: https://help.spyn.co
+twitter_username: spynco
+exclude:
+- vendor
+markdown: kramdown
+gems:
+- algoliasearch-jekyll
+- jekyll-coffeescript
